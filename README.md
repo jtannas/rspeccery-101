@@ -2,11 +2,8 @@
 
 ## Getting Started
 
-1. Make sure Ruby is installed (preferably 2.6.0)
+1. Make sure Ruby is installed, preferably 2.6.0 (either through rbenv/docker/whatever floats your boat)
 2. `$ bundle install`
-
-or:  `docker run --rm -it -v $PWD:$PWD -w $PWD -e GEM_HOME=$PWD/.gem -e GEM_PATH=$PWD/.gem ruby bash`
-
 
 ## Glossary
 
