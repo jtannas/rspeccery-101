@@ -2,8 +2,8 @@
 
 ## Getting Started
 
-1) Make sure Ruby is installed (preferably 2.6.0)
-2) `$ bundle install`
+1. Make sure Ruby is installed (preferably 2.6.0)
+2. `$ bundle install`
 
 ## Glossary
 
@@ -29,3 +29,12 @@
 - `skip`: Indicates a test that should be skipped (aka not run at all).
 - `xit`: an alternative way of writing pending.
 - `subject`: The subject of a test can be defined using `subject(<optional explicit subject name>) { subject definition block}`. It can then be referred to using `it { is_expected.to <expectation> }` for compact tests.
+- `describe <something>`: used for grouping tests into logical chunks centering on `<something>` (eg. a class, a function, a method)
+- `context <situation description>`: Although just an alias of `describe`, `context` is typically used within describe blocks to describe the situation being tested on the `thing` that describe is being tested
+
+
+## Best Practices
+- Arrange + Act + Assert: Set up your tests in the order of
+  1. Arranging your state and variables
+  2. Performing the action that is being tested
+  3. Asserting that the correct effects occured
