@@ -27,7 +27,7 @@ RSpec.describe(DayOne) do
       # Arrange - Set the initial value for @number
       described_instance.instance_variable_set(:@number, 0)
       # Act
-      return_value = described_instance.add_one
+      described_instance.add_one
       # Assert
       expect(described_instance.instance_variable_get(:@number)).to equal(1)
     end
