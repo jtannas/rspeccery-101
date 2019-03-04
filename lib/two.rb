@@ -20,11 +20,11 @@ def make_pyramid(height)
   buffer
 end
 
-def puts_pyramid(height)
+def puts_pyramid(height, putter: $stdout.method(:puts))
   buffer = ''
   (1..height).each do |level|
     buffer += '#' * level + "\n"
   end
-  puts buffer
+  putter.call(buffer)
   true
 end
